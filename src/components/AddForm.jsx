@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-/* import { addTodoService } from '../services/todo.services' */
+import { addTodoService } from '../services/todo.services'
 
 
 function AddForm(props) {
@@ -28,7 +28,7 @@ function AddForm(props) {
       }
 
       /* await axios.post("http://localhost:5005/api/todos", newTodo) */
-      /* await addTodoService(newTodo) */
+      await addTodoService(newTodo)
 
       props.getTodos(
 
