@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState/* , useContext  */} from "react";
 import { useNavigate } from "react-router-dom";
 import { loginService } from "../../services/auth.services";
 
@@ -6,7 +6,7 @@ import { loginService } from "../../services/auth.services";
 
 function Login() {
 
-  /* const { authenticateUser } = useContext(AuthContext) */
+  /* const { authenticatedUser } = useContext(AuthContext) */
 
   const navigate = useNavigate()
 
@@ -35,7 +35,7 @@ function Login() {
 
       localStorage.setItem("authToken", authToken)
 
-      /* authenticateUser() */
+      /* authenticatedUser() */
 
       navigate("/todos")
 
